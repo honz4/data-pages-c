@@ -1,0 +1,2 @@
+====== parametr ======
+otázka: parametr nebo argument: [[wp>Parameter_(computer_science)]]

@@ -1,0 +1,16 @@
+====== string.h ======
+[[die.net>3/string]] [[string]] a [[memory]] operace ve standardní C [[library|knihovně]] ([[libc]]
+
+  * C [[string]]/řetězec je **pouhý!!!** ''char*'', resp. ''char z[]'' ukončený znakem '\0' (znak NUL, zarážka)
+  * velmi nebezpečný "datový typ"
+  * pro velikost string/memory se používá [[size_t]]
+  * také tu najde využití [[const]] či [[restrict]]
+  * string [[literal]] je ''"string literal"'', překladač jím umí inicializovat i ''char z[]'' proměnné
+
+====== strlen ======
+[[die.net>3/strlen]] asi nejpoužívanější, O(n) !!!
+
+====== strdup ======
+  * pozor, je třeba zachazet opatrně jako s [[malloc]]
+  * "bezpečnější" varianta je [[die.net>3/strndup]]
+
