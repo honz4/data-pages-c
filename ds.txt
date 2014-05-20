@@ -1,0 +1,27 @@
+======data structures======
+  * [[wp>Data_structure]]
+  * [[wp>List_of_data_structures]]
+======array======
+  * uthash
+======string======
+  * vstr
+  * bstring
+======list======
+======queue======
+======hash======
+  * [[wp>Cuckoo_hashing]]
+======tree======
+======trie======
+======bitset======
+  * [[wp>Bit_array]]
+  * [[github>noporpoise/BitArray]]
+  * http://michael.dipperstein.com/bitlibs
+======test======
+  * [[github>rra/c-tap-harness]] C knihovna (+shell library) pro [[wp>Test_Anything_Protocol]]
+======libs======
+  * http://code.google.com/p/c-generic-library/
+  * http://www.liblfds.org/
+  * [github>attractivechaos/klib]]
+  * [[sf>sexpr]] [[wp>S-expression]]
+======see also======
+  *http://stackoverflow.com/questions/654771/algorithms-and-data-structures-that-are-not-mainstream?rq=1

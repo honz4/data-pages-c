@@ -1,0 +1,6 @@
+======compiler======
+viz [[wp>C_(Programming_language)]]
+  * gcc, g++
+  * clang
+  * tcc
+  * Visual C

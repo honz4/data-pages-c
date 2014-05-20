@@ -1,0 +1,5 @@
+====== signal ======
+  * http://en.wikipedia.org/wiki/Signal_(computing)
+  * http://osiris.978.org/~alex/safesignalhandling.html
+  * http://users.evtek.fi/~tk/rtp/signals-programming.html
+  * http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.basetechref/doc/basetrf2/sigaction.htm

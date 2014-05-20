@@ -1,0 +1,3 @@
+======reentrant======
+  * [[wp>Reentrancy_(computing)]]
+  * [[github>noporpoise/sort_r]]

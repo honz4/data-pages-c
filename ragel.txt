@@ -1,0 +1,34 @@
+======ragel ======
+======epxr ======
+^               ^            ^ ^
+| expr . expr   | concat     | |
+| expr %%|%% expr  | nebo       | |
+| expr & expr   | intersect  | |
+| expr - expr   | diff       | |
+| expr -- expr  | strong diff| |
+| expr*         |            | |
+| expr+         |            | |
+| expr?         |            | |
+| expr{n,m}     |            | |
+|!expr          |            | |
+|^expr          |            | |
+======extra ======
+defacto hratky s prioritami
+^guarded        ^            ^ ^
+| expr :>  expr |main = any* :> 'FIN'                |Finish-Guarded Concatenation|
+| expr ::> expr |comment= '/*' (any @comm)* :>> '*/' |Entry-Guarded Concatenation|
+| expr ::> expr |main = any* :>> 'FIN'               |catch-all on the last chars of FIN|
+| expr <:  expr |main := (' '* >start %fin ) <: (' ' $ws %%|%% [a-z] $alpha)*|Left-Guarded Concatenation|
+| expr **  expr | |Left-Guarded Concatenation|
+======action ======
+action a1 { c-code; }
+======transitional ======
+^  ^       ^
+|> |start  |
+|@ |finish |
+|$ |all    |
+|% |leave  |
+<code>
+main := (lower* >A $B %C ) . '\n' @N;
+</code>
+======in state ======

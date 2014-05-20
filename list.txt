@@ -1,0 +1,5 @@
+======list======
+  * http://isis.poly.edu/kulesh/stuff/src/klist/ 
+  * http://stackoverflow.com/questions/305611/container-class-library-for-c
+  * http://stackoverflow.com/questions/668501/are-there-any-open-source-c-libraries-with-common-data-structures
+  * http://code.google.com/p/ulib/

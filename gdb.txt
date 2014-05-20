@@ -1,0 +1,33 @@
+List of the gdb default key mappings:
+-------------------------------------
+These keys are mapped after the|Cmapkeys|vim command is run.
+
+CTRL-Z  send an interrupt to gdb and the program it is running (unix only)
+B       info breakpoints
+L       info locals
+A       info args
+S       step
+CTRL-N  next: next source line, skipping all function calls
+F       finish
+R       run
+Q       quit
+C       continue
+W       where
+X       foldvar
+CTRL-U  up: go up one frame
+CTRL-D  down: go down one frame
+cursor position: ~
+CTRL-B  set a breakpoint on the line where the cursor is located
+CTRL-E  clear all breakpoints on the line where the cursor is located
+mouse pointer position: ~
+CTRL-P  print the value of the variable defined by the mouse pointer position
+CTRL-X  print the value that is referenced by the address whose
+value is that of the variable defined by the mouse pointer position
+
+mouse pointer position:
+CTRL-P print the value of the variable defined by the mouse pointer position
+CTRL-X print the value that is referenced by the address whose
+       value is that of the variable defined by the mouse pointer position
+CTRL-K set a breakpoint at assembly address shown by mouse position
+CTRL-H clear a breakpoint at assembly address shown by mouse position
+CTRL-J add the selected variable at mouse position to the watched variables window

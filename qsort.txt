@@ -1,0 +1,5 @@
+====== qsort ======
+  * arrrg _r verze: http://sourceware.org/ml/libc-alpha/2008-12/msg00003.html
+  * qsort_r: Linux potrebuje pro glibc -D_GNU_SOURCE
+  * reentrantni qsort potrebuje [[github>flightaware/speedtables]]
+  * viz take [[github>swenson/sort]]

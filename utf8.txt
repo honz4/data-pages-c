@@ -1,0 +1,2 @@
+======utf8======
+  * http://woboq.com/blog/utf-8-processing-using-simd.html

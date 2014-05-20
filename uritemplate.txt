@@ -1,0 +1,50 @@
+====== uritemplate ======
+
+[[RFC>3896]] viz take JSR311 JAX-RS resp. **urldispatch**
+
+  * [[github>toffaletti/libguri]]
+  * [[sf>uriparser]]
+<code>
+URI-Template  = *( literals / expression )
+
+literals      =  %x21 / %x23-24 / %x26 / %x28-3B / %x3D / %x3F-5B
+/  %x5D-5F / %x61-7A / %x7E / ucschar / iprivate
+/  pct-encoded
+; any Unicode character except: CTL, SP,
+;  DQUOTE, "'", "%" (aside from pct-encoded),
+;  "<", ">", "\", "^", "`", "{", "|", "}"
+
+expression    =  "{" [ operator ] variable-list "}"
+operator      =  "+" / "#" / "." / "/" / ";" / "?" / "&" /  op-reserve
+op-reserve    =  "=" / "," / "!" / "@" / "|"
+; reserved for local use: "$" / "(" / ")"
+
+
++   Reserved character strings;
+#   Fragment identifiers prefixed by "#";
+.   Name labels or extensions prefixed by ".";
+/   Path segments prefixed by "/";
+;   Path parameter key or key=value pairs prefixed by ";";
+?   Query component beginning with "?" and consisting of key=value pairs separated by "&"; and,
+&   Continuation of query-style &key=value pairs within a literal query component.
+
+The operator characters equals ("="), comma (","), exclamation ("!"),
+at-sign ("@"), and pipe ("|") are reserved for future extensions.
+The expression syntax specifically excludes use of the dollar ("$")
+and parentheses ["(" and ")"] characters so that they remain
+available for local language extensions outside the scope of this specification.
+
+
+variable-list =  varspec *( "," varspec )
+varspec       =  varname [ modifier ]
+varname       =  varchar *( varchar / "." )
+varchar       =  ALPHA / DIGIT / "_" / pct-encoded
+
+
+modifier      =  prefix / explode
+
+prefix        =  ":" max-length
+max-length    =  %x31-39 *DIGIT   ; positive integer
+
+explode       =  "*"
+</code>
