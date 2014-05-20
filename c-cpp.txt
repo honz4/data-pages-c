@@ -1,0 +1,24 @@
+======C versus C++======
+  * [[wp>Compatibility_of_C_and_C++]]
+
+====== void *malloc() ======
+V C je **void* ** //generický// [[pointer]] a lze:
+<code c>
+int i = 5;
+int *pi;
+
+void *p = &i; //lze do ně uložit různé typy pointerů
+pi = p;       //lze jej uložit do jakéhokoli pointeru
+</code>
+Ale nejčastější "konstrukcí" je:
+<code c>
+struct node *pnode = (struct node *)malloc(sizeof(struct node));
+//casting návratové hodnoty malloc() není od c89 vůbec třeba:
+// malloc() vrací---v (void*) !!!
+struct node *pnode = malloc(sizeof *pnode);
+                          //^^^^^^^^^^^^^---lze i takto! není třeba sizeof(type)!
+</code>
+Podle mne je to způsobeno používání "vývojových" prostředí (Code::blocks, VisualStudio), které
+defaultně *.c zdrojáky pokládají za C++ kód, resp. //projekt// defaultně konfigurují v C++ režimu.
+
+To nemluvím o nepoužívaní ''extern "C" { deklarace }'' v hlavičkových souborech! TODO

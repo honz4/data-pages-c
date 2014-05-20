@@ -1,0 +1,5 @@
+======= uuid =======
+  * [[so>2566964/uuid-library-for-c]]
+  * [[so>16884288/which-uuid-library-to-use]]
+  * [[https://github.com/jpalus/libuuuid]]
+  * [[https://github.com/certik/uuid]]
